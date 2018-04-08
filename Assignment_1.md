@@ -95,24 +95,35 @@ __2.__ Paste in the markdown table from the lab manual that includes for each ge
 
 |    | A.thaliana | C.elegans | D.melanogaster |
 |:----:|:----:|:----:|:----:|:----:|
-|**file size (bytes)**|121183082|      |      |
+|**file size (bytes)**|121,183,082|      |      |
 |**# of chromosomes**| 7 |  |  |
-|  **genome size (bp)**  | 121182535 |  | |
-| **# of protein-coding genes** |  |  |  |  
-| **average protein length** |  sdf|  sdf|  sdf|
+|  **genome size (bp)**  | 121,182,535 |  | |
+| **# of protein-coding genes** |35,386|  |  |  
+| **average protein length (AA)** | 414 |  sdf|  sdf|
 
 For _ONE_ of the files, provide the code that you used to answer these questions:
 
 * Size of the file:
 
       wc -c A.thaliana.fa
+
 * Number of chromosomes:
+
       grep \n -c A.thaliana.fa
+
 * Size of the genome in bp
+
       grep \n -v A.thaliana.fa | wc -c
+
 * Number of protein-coding genes
-      
+
+      grep Symbols -c A.thaliana.fa
+
 * Average protein length
+
+      All_AA=$(grep -v Symbols A.thaliana.fa | wc -m)
+      num_Prot=$(grep -c Symbols A.thaliana.fa)
+      echo $((All_AA /num_Prot))
 
 
 __3.__ How do you know that when you use `shuffleseq` that the sequences have the same exact composition?
