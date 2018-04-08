@@ -93,13 +93,27 @@ __1.__ Paste in the result of the `ls -lR Data` command.
 
 __2.__ Paste in the markdown table from the lab manual that includes for each genome:
 
-* Size of the file
-* Number of chromosomes
+|    | A.thaliana | C.elegans | D.melanogaster |
+|:----:|:----:|:----:|:----:|:----:|
+|**file size (bytes)**|121183082|      |      |
+|**# of chromosomes**| 7 |  |  |
+|  **genome size (bp)**  | 121182535 |  | |
+| **# of protein-coding genes** |  |  |  |  
+| **average protein length** |  sdf|  sdf|  sdf|
+
+For _ONE_ of the files, provide the code that you used to answer these questions:
+
+* Size of the file:
+
+      wc -c A.thaliana.fa
+* Number of chromosomes:
+      grep \n -c A.thaliana.fa
 * Size of the genome in bp
+      grep \n -v A.thaliana.fa | wc -c
 * Number of protein-coding genes
+      
 * Average protein length
 
-For _ONE_ of the files, provide the code that you used to answer these questions.
 
 __3.__ How do you know that when you use `shuffleseq` that the sequences have the same exact composition?
 
