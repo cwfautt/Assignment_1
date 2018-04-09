@@ -93,13 +93,13 @@ __1.__ Paste in the result of the `ls -lR Data` command.
 
 __2.__ Paste in the markdown table from the lab manual that includes for each genome:
 
-|  .   | A.thaliana | C.elegans | D.melanogaster |  
+|     | A.thaliana | C.elegans | D.melanogaster |  
 |:----:|:----------:|:---------:|:--------------:|
-|**file size (bytes)**|121,183,082|    na  | na     |  
-|**# of chromosomes**| 7 | na | na |  
-|  **genome size (bp)**  | 121,182,535 |na  |na |  
-| **# of protein-coding genes** |35,386| na | na |   
-| **average protein length (AA)** | 414 |  sdf|  sdf|
+|**file size (bytes)**|121,183,082|   53,248 **(??)**  | 172,113,892   |  
+|**# of chromosomes**| 7 | 1 **(??)** | 15 |  
+|  **genome size (bp)**  | 121,182,535 |53246 **(??)**  |172,111,277 |  
+| **# of protein-coding genes** |35,386| 26,757 | 30,307 |   
+| **average protein length (AA)** | 414 |  453|  672|
 
 For _ONE_ of the files, provide the code that you used to answer these questions:
 
